@@ -1,0 +1,6 @@
+#!/bin/bash
+cd /home/ec2-user/server
+pm2 update
+pm2 kill
+yes | cp -rf .env .env.production
+MODE=production pm2 -f start npm -- start

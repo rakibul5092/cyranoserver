@@ -1,0 +1,6 @@
+#!/bin/bash
+cd /home/ec2-user/server
+n 16.15.1
+npm i -g npm@^7.24.2 --location=global
+npm install -g @nestjs/cli
+npm install
